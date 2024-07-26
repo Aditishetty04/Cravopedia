@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cravopedia - Aditi Shetty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            width: calc(33% - 20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h3 {
+            margin: 0 0 10px;
+        }
+        .card-content p {
+            color: #555;
+        }
+        .swipe-container {
+            display: flex;
+            overflow-x: scroll;
+        }
+        .swipe-container::-webkit-scrollbar {
+            display: none;
+        }
+        .swipe-item {
+            min-width: 300px;
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cravopedia</h1>
+        <p>Exploring the flavors of the city, one bite at a time.</p>
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="photo1.jpg" alt="Delicious Food 1">
+            <div class="card-content">
+                <h3>Local Food Stall</h3>
+                <p>Discovering the hidden gems in the city’s local food stalls. Each bite tells a story of tradition and flavor.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="photo2.jpg" alt="Delicious Food 2">
+            <div class="card-content">
+                <h3>Luxury Restaurant</h3>
+                <p>Indulging in the culinary masterpieces of high-end restaurants. A perfect blend of taste and elegance.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="photo3.jpg" alt="Delicious Food 3">
+            <div class="card-content">
+                <h3>Café Delights</h3>
+                <p>Exploring the cozy cafes that offer a unique combination of comfort and flavor. Perfect spots for relaxing and enjoying a meal.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
